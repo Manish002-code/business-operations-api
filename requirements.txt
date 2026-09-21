@@ -6,3 +6,4 @@ pydantic[email]
 pytest
 httpx
 python-dotenv
+pydantic-settings>=2.0,<3.0
