@@ -11,6 +11,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+        DATABASE_URL: postgresql+psycopg2://portfolio_user:portfolio_password@localhost:5432/business_operations
 
     steps:
       - name: Checkout repository
