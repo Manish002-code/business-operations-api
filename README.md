@@ -42,18 +42,33 @@ FastAPI
 business_operations_api/
 │
 ├── app/
+│   ├── core/
+│   │   └── config.py
+│   │
+│   ├── db/
+│   │   ├── __init__.py
+│   │   └── database.py
+│   │
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── customer.py
+│   │
+│   ├── schemas/
+│   │   ├── __init__.py
+│   │   └── customer.py
+│   │
+│   ├── services/
+│   │   ├── __init__.py
+│   │   └── customer_service.py
+│   │
 │   ├── __init__.py
-│   ├── main.py
-│   ├── database.py
-│   ├── models.py
-│   ├── schemas.py
-│   └── crud.py
+│   └── main.py
 │
 ├── tests/
 │   ├── __init__.py
 │   └── test_customer.py
 │
-├── .env
+├── .env.example
 ├── .gitignore
 ├── README.md
 └── requirements.txt
